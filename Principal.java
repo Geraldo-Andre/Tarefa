@@ -30,7 +30,9 @@ public class Principal {
         if(n3 == 1)
             b3 = true;
 
-        
+        PortaAnd port = new PortaAnd(b1, b2);
+        port.input();
+        System.out.println("saida: "+ port.output(b1, b2));
         
 
         PortaAndTres port3 = new PortaAndTres(b2, b1, b3);
